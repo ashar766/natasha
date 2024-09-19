@@ -1,0 +1,103 @@
+@keyframes example {
+    0% {
+      margin: 1;
+    }
+  
+    50% {
+      scale: 1.1
+    }
+  
+    100% {
+      scale: 1;
+    }
+  }
+  
+  /* The element to apply the animation to */
+  .animation {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  
+  }
+  
+  .transition {
+    transform: scale(1);
+    transition: transform 2s ease;
+  }
+  
+  .transition:hover {
+    transform: scale(1.2);
+  }
+  
+  .transition a:hover {
+    transform: scale(1.1);
+    color: rgb(22, 213, 255) !important;
+  
+  
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .black-box {
+    position: relative;
+    z-index: 1;
+    height: 80vh;
+    width: 60vh;
+    border-radius: 150px 150px 0px 0px;
+  
+  }
+  
+  .gray-box img {
+    position: absolute;
+    z-index: 3;
+    /* gray box will be above both green and black box */
+    height: 350px;
+    width: 25%;
+    left: -30px;
+    top: 30px;
+  }
+  
+  .green-box img {
+    position: absolute;
+    z-index: 2;
+    /* green box will be above black box */
+    width: 130vh;
+    height: 95vh;
+    left: -60%;
+    top: -18.75%;
+  
+  }
+  
+  
+  div.a {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transform: rotate(-90deg);
+  }
+  
+  div.b {
+    margin: 0%;
+    padding: 0%;
+    font-size: smaller;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    transform: rotate(-90deg);
+  }
+  
+  .Drop-shadow {
+    float: right;
+  }
+  
+  .Drop-shadow img {
+    filter: drop-shadow(-5px 0px 0px #6AC9E1);
+  }
+  
+  .fw-small {
+    line-height: 1.2;
+  }
+  
+  
